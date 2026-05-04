@@ -1,0 +1,249 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --main-color: #2b6ec1;
+  --primary-color: #e437a2;
+  --secondry-color: #11dabf80;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg, var(--main-color), var(--primary-color)), var(--secondry-color);
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ul {
+  display: flex;
+  gap: 30px; /* Reduced for better fit */
+  list-style: none;
+}
+
+.li {
+  font-weight: bold;
+}
+
+nav button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Section 1 - Hero */
+.main {
+  background-image: url('./assets1/Media/download (8).jpeg');
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ch1 {
+  width: 30%;
+  background: radial-gradient(circle, rgba(146, 85, 85, 0.8), rgba(12, 226, 87, 0.5));
+  padding: 3rem;
+  font-style: italic;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Section 2 - Cards */
+.container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: radial-gradient(circle, rgb(19, 65, 163) 0%, rgb(149, 42, 89) 100%);
+  padding: 40px 20px;
+}
+
+.itema {
+  background-color: azure;
+  min-height: 40vh;
+  width: 250px;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.itema p {
+  line-height: 1.6;
+}
+
+/* Section 3 - Images Grid */
+.conatiner2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.par1, .par2, .par3, .par4 {
+  height: 40vh;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.par1 { background-image: url('./assets1/Media/Overview of the Dubai Real Estate Market in 2024.jpeg'); }
+.par2 { background-image: url('./assets1/Media/download (7).jpeg'); }
+.par3 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSALRkq9bod_NuHIMCDLRj5lY690MtnG7weQQ&s'); }
+.par4 { background-image: url('./assets1/Media/cpgdb.jpeg'); }
+
+/* Section 4 - Info */
+.conatiner3 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 50px 0;
+}
+
+.a {
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.img {
+  width: 50%;
+  min-height: 50vh;
+  background-image: url('./assets1/Media/123.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.z {
+  background-color: whitesmoke;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+}
+
+/* Section 5 - Testimonial */
+.main2 {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #2b6ec1;
+  padding: 40px;
+}
+
+.ch2 {
+  height: 200px;
+  width: 200px;
+  background-image: url('./assets1/Media/456.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.ch3 {
+  width: 60%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Section 6 - AI Section */
+.main3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.ch4 {
+  width: 45%;
+  padding: 2rem;
+}
+
+.ch5 {
+  width: 45%;
+  min-height: 400px;
+  background-image: url('./assets1/Media/Top AI Cloud Business Management Platform Tools 2025.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Section 7 - Banner */
+.picture {
+  background-image: url('./assets1/Media/4a892ce7531da494a49e4dd162c4b3e4.jpg');
+  min-height: 30vh;
+  background-size: cover;
+  width: 100%;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section 8 - Portfolio Grid */
+.main4, .main5, .main6 {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ch6, .ch7, .ch8, .ch9, .ch10, .ch11, .ch12, .ch13, .ch14 {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1030px) {
+  .ch1 { width: 50%; }
+  .itema { width: 45%; }
+  .par1, .par2, .par3, .par4 { width: 50%; }
+  .ch3 { width: 80%; }
+}
+
+@media (max-width: 768px) {
+  nav ul { display: none; }
+  .ch1 { width: 80%; }
+  .a, .img, .ch4, .ch5 { width: 100%; }
+  .main2 { flex-direction: column; }
+  .ch3 { width: 100%; }
+  .picture { padding: 30px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .itema { width: 100%; }
+  .par1, .par2, .par3, .par4 { width: 100%; }
+  .ch6, .ch7, .ch8, .ch9, .ch10, .ch11, .ch12, .ch13, .ch14 {
+    width: 100%;
+    height: 250px;
+  }
+}
