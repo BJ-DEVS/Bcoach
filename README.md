@@ -1,1 +1,2 @@
-I encountered several difficulties while making the design responsive, but through constant effort and logic building, I overcame them.
+One of the key milestones in this project was mastering responsiveness. Initially, I faced challenges in making the layout fluid across different screen sizes. However, through consistent effort and logical problem-solving, I successfully implemented a fully responsive design. This process significantly improved my understanding of layout structures and CSS logic.
+#Challenges #Frontend developer #Self learning
